@@ -17,3 +17,6 @@ services:
   helper:
     image: busybox
     command: ["sh", "-c", "sleep infinity"]
+    depends_on:
+      app:
+        condition: service_healthy
