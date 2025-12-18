@@ -1,6 +1,7 @@
 services:
   app:
     image: nginx
+    container_name: my-nginx
     ports:
       - "8080:80"
     volumes:
